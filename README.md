@@ -7,7 +7,7 @@ New Features:
 - Made the following properties work: **allowChildren & allowDropInside** (allowChildren currently has no effect on existing children)
   <br />
   <br />
-  **Everything else is left as is. Even this Readme.**
+  **Everything else is left as is. Even this Readme (except for the package name)**
 
 # React Tree List
 
@@ -28,7 +28,7 @@ A draggable & sortable tree list UI component for React.
 ### Installation with NPM
 
 ```bash
-npm install @bartaxyz/react-tree-list
+npm install @gamingklex/react-tree-list
 ```
 
 This package additionaly requires you having `react` and `react-dom` dependencies.
@@ -38,7 +38,7 @@ This package additionaly requires you having `react` and `react-dom` dependencie
 You can import the component directly as `ReactTreeList`
 
 ```js
-import { ReactTreeList } from "@bartaxyz/react-tree-list";
+import { ReactTreeList } from "@gamingklex/react-tree-list";
 ```
 
 #### Typescript
@@ -47,7 +47,7 @@ For Typescript the imports additionaly include types like `ReactTreeListProps` w
 for `ReactTreeList` component.
 
 ```ts
-import { ReactTreeList, ReactTreeListProps } from "@bartaxyz/react-tree-list";
+import { ReactTreeList, ReactTreeListProps } from "@gamingklex/react-tree-list";
 ```
 
 ### Simple Example
@@ -58,7 +58,7 @@ This is a simple implementation with some items (one nested item) and defaults f
 
 ```jsx
 import React, { useState } from "react";
-import { ReactTreeList } from "@bartaxyz/react-tree-list";
+import { ReactTreeList } from "@gamingklex/react-tree-list";
 
 const Component = () => {
   const [data, setData] = useState([
@@ -136,7 +136,8 @@ React Tree List is licensed under the MIT License.
 
 ## Authors
 
-Ondřej Bárta · [GitHub](https://github.com/bartaxyz) · [website](https://www.ondrejbarta.xyz) · [twitter](https://twitter.com/bartaxyz)
+Ondřej Bárta · [GitHub](https://github.com/bartaxyz) · [website](https://www.ondrejbarta.xyz) · [twitter](https://twitter.com/bartaxyz) <br />
+**Edited by** GamingKlex · [GitHub](https://github.com/GamingKlex)
 
 ## Contributors
 
