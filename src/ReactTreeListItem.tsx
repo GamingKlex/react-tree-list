@@ -134,6 +134,7 @@ export const ReactTreeListItem: React.FC<ReactTreeListItemProps> = ({
 
   const dropArea: React.HTMLAttributes<HTMLDivElement> = {
     onDrop: (event) => {
+      if (!item.allowChildren || !item.allowDropInside) return;
       if (
         event.dataTransfer.getData("itemId") !== item.id &&
         onDropInside &&
@@ -145,8 +146,14 @@ export const ReactTreeListItem: React.FC<ReactTreeListItemProps> = ({
       setDragOver(false);
     },
     onDragOver: (event) => event.preventDefault(),
-    onDragEnter: () => setDragOver(true),
-    onDragLeave: () => setDragOver(false),
+    onDragEnter:
+      !item.allowChildren || !item.allowDropInside
+        ? () => {}
+        : () => setDragOver(true),
+    onDragLeave:
+      !item.allowChildren || !item.allowDropInside
+        ? () => {}
+        : () => setDragOver(false),
   };
 
   const beforeDropArea: React.HTMLAttributes<HTMLDivElement> = {

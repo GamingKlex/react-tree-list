@@ -1,9 +1,23 @@
+# ⚠ Warning
+
+This repository will only have small feature changes / additions and may not be up to date with the [original repository](ttps://github.com/bartaxyz/react-tree-list)!
+<br /><br />
+New Features:
+
+- Made the following properties work: **allowChildren & allowDropInside** (allowChildren currently has no effect on existing children)
+  <br />
+  <br />
+  **Everything else is left as is. Even this Readme.**
+
 # React Tree List
 
 A draggable & sortable tree list UI component for React.
 
 | <img src="assets/react-tree-list-showcase.gif" alt="React Tree List Component Showcase" width="400" height="318" /> |
 | ------------------------------------------------------------------------------------------------------------------- |
+
+> **Note**
+> These are still the links from the forked repository.
 
 [Demo](https://bartaxyz.github.io/react-tree-list/)
 &nbsp;&middot;&nbsp; [See Features](https://github.com/bartaxyz/react-tree-list/projects)
